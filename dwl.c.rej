@@ -1,0 +1,10 @@
+--- dwl.c
++++ dwl.c
+@@ -1870,6 +1888,7 @@ printstatus(void)
+ 		printf("%s tags %u %u %u %u\n", m->wlr_output->name, occ, m->tagset[m->seltags],
+ 				sel, urg);
+ 		printf("%s layout %s\n", m->wlr_output->name, m->lt[m->sellt]->symbol);
++		dwl_wm_printstatus(m);
+ 	}
+ 	fflush(stdout);
+ }
